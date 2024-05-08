@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const { default: image } = require('../../client/src/components/Image/Image');
 const Schema = mongoose.Schema;
 
 const postSchema = new Schema({

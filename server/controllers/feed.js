@@ -20,7 +20,7 @@ exports.getPosts = (req, res, next) => {
 };
 
 exports.createPost = (req, res, next) => {
-  const errors = validationResult(req);
+  const errors = req.validationResult();
   if (!errors.isEmpty()) {
     return res.status(422).json({
       message: "Validation failed, entered data is incorrect.",
